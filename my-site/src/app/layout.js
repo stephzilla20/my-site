@@ -1,5 +1,6 @@
 import './globals.css'
-
+import Nav from './components/Nav'
+import Providers from './providers'
 
 export const metadata = {
   title: 'Stephen Tao',
@@ -7,9 +8,18 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='min-h-screen bg-snowstorm-2 dark:bg-polarnight-4'>
+        <Providers>
+          <section className='flex flex-col items-center'>
+            <Nav></Nav>
+          </section>
+          {children}
+        </Providers>
+
+      </body>
     </html>
   )
 }
