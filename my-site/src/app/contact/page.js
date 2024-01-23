@@ -1,17 +1,11 @@
 'use client'
 import React, { useState } from "react";
 import Head from 'next/head'
-import Image from 'next/image'
-import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
-import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {BsSun} from "react-icons/bs";
-import {MdEmail} from 'react-icons/md'
-import Link from "next/link";
+
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, viewport-fit=cover"></meta>
       </Head>

@@ -1,6 +1,6 @@
 'use client'
 
-//using next-themes themeprovider 
+//using next-themes themeprovider to create a context to wrap components 
 
 import { ThemeProvider } from 'next-themes'
 import { useEffect, useState } from 'react'
