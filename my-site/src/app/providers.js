@@ -7,7 +7,6 @@ import { useEffect, useState } from 'react'
 
 
 
-
 export default function Providers({children}) {
   const [mounted, setMounted] = useState(false);
 
@@ -18,6 +17,9 @@ export default function Providers({children}) {
   if(!mounted){
     return <>{children}</>
   }
-  return <ThemeProvider defaultTheme='system' attribute='class'>{children}</ThemeProvider>
+  return (
+    <ThemeProvider defaultTheme='system' attribute='class'>{children}</ThemeProvider>
 
+
+  );
 }

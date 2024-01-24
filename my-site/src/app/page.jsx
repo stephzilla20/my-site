@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Head from 'next/head'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import { IoMdDocument } from "react-icons/io";
-
+import Image from "next/image";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -59,7 +59,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, viewport-fit=cover"></meta>
       </Head>
       <main className='caret-transparent  px-10 bg-snowstorm-2 dark:bg-polarnight-4 '>
-          <div className="flex flex-col items-start" >
+          <div className="flex flex-col justify-center" >
+            <div className='mb-3 mt-3 flex justify-center items-center'>
+              <Image
+                  src="/pics/my-pic.JPG"
+                  width={500}
+                  height={500}
+                  alt="profile pic"
+                  className="rounded-full overflow-hidden w-[240px] h-[240px] object-cover"
+                />
+            </div>
             <h2 className='mb-[-2.5rem] font-Varela text-polarnight-2 dark:text-snowstorm-2 text-4xl py-10 '> hi! i'm </h2>
             <h1 className='mb-8 font-Varela text-5xl text-frost-1 dark:text-frost-3 font-bold '>Stephen Tao</h1>
             <p className='font-Varela text-polarnight-2 dark:text-snowstorm-2 text-lg leading-7 pb-10 '>
@@ -68,7 +77,7 @@ export default function Home() {
           </div>
 
        
-          <div className=' mt-12 pt-12 text-4xl text-frost-1 dark:text-snowstorm-2 flex justify-center space-x-8 '>
+          <div className=' mt-8 text-4xl text-frost-1 dark:text-snowstorm-2 flex justify-center space-x-8 '>
             <a href='https://www.linkedin.com/in/stephen-tao-7ab814210' target='_blank'><AiFillLinkedin /></a>
             <a href='https://github.com/stephzilla20' target='_blank'><AiFillGithub /></a>
             <a href='https://drive.google.com/file/d/1MMMsK6ju8_qAZNNKrzJVSCENMK3VJ8-b/view' target="_blank"><IoMdDocument/></a>

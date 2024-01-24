@@ -16,7 +16,7 @@ function About() {
       <main className='caret-transparent bg-snowstorm-2 px-10 dark:bg-polarnight-4'>
         <div className="flex flex-col items-start" >
             <h1 className='mb-8 font-Varela text-5xl text-frost-1 dark:text-frost-3 font-bold '>about me</h1>
-            <div className='mb-8'>
+            {/* <div className='mb-8'>
               <Image
                   src="/pics/my-pic.JPG"
                   width={500}
@@ -24,7 +24,7 @@ function About() {
                   alt="profile pic"
                   className="rounded-full overflow-hidden w-[200px] h-[200px] object-cover"
                 />
-            </div>
+            </div> */}
 
               
             <p className='font-Varela text-polarnight-2 dark:text-snowstorm-2 text-lg leading-7 pb-10 '>

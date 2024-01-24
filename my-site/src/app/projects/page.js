@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import Head from 'next/head'
+import { Button, Card} from "@mui/material";
 
 export default function Home() {
 
@@ -11,7 +12,6 @@ export default function Home() {
       </Head>
       <main className='caret-transparent bg-snowstorm-2 px-10 dark:bg-polarnight-4 transition duration-500 ease-in-out'>
         
-
         
 
       </main>
