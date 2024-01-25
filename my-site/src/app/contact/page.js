@@ -21,8 +21,8 @@ export default function Home() {
         
       <div className=' mt-8 text-4xl text-frost-1 dark:text-snowstorm-2 flex justify-center space-x-8 '>
             <a href='s1tao@torontomu.ca' target='_blank'><AiFillMail /></a>
-            <a href='https://github.com/stephzilla20' target='_blank'><AiFillGithub /></a>
-            <a href='https://drive.google.com/file/d/1MMMsK6ju8_qAZNNKrzJVSCENMK3VJ8-b/view' target="_blank"><IoMdDocument/></a>
+            {/* <a href='https://github.com/stephzilla20' target='_blank'><AiFillGithub /></a>
+            <a href='https://drive.google.com/file/d/1MMMsK6ju8_qAZNNKrzJVSCENMK3VJ8-b/view' target="_blank"><IoMdDocument/></a> */}
           </div>
 
       </main>
