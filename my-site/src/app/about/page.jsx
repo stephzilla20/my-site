@@ -15,7 +15,7 @@ function About() {
       </Head>
       <main className='caret-transparent bg-snowstorm-2 px-10 dark:bg-polarnight-4'>
         <div className="flex flex-col items-start" >
-            <h1 className='mb-8 font-Varela text-5xl text-frost-1 dark:text-frost-3 font-bold '>about me</h1>
+            <h1 className='mb-8 font-Varela text-5xl text-frost-1 dark:text-frost-3 font-bold lg:mb-10 lg:pb-10 '>about me</h1>
             {/* <div className='mb-8'>
               <Image
                   src="/pics/my-pic.JPG"
@@ -32,7 +32,7 @@ function About() {
             </p>
 
             <p className='font-Varela text-polarnight-2 dark:text-snowstorm-2 text-lg leading-7 pb-10 '>
-              I am a big foodie, and love exploring the different restaurents downtown right where my school is! Besides that, my other hobbies include basketball and fitness.
+              I am a big foodie, and love exploring the different restaurents downtown right where my school is! My other hobbies include basketball and personal fitness.
             </p>
 
             <p className='font-Varela text-polarnight-2 dark:text-snowstorm-2 text-lg leading-7 pb-10 '>

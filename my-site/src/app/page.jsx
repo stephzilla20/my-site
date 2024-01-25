@@ -58,7 +58,7 @@ export default function Home() {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, viewport-fit=cover"></meta>
       </Head>
-      <main className='caret-transparent  px-10 bg-snowstorm-2 dark:bg-polarnight-4 '>
+      <main className='caret-transparent  px-10 bg-snowstorm-2 dark:bg-polarnight-4'>
           <div className="flex flex-col justify-center" >
             <div className='mb-3 mt-3 flex justify-center items-center'>
               <Image

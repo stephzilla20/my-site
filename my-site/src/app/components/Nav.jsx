@@ -13,7 +13,7 @@ return (
       <ul className='text-xl font-Varela flex items-center space-x-3 '>
         <li className="hover:text-frost-1 dark:hover:text-frost-3 "><Link href="/">Home</Link></li>
         <li className="hover:text-frost-1 dark:hover:text-frost-3 "><Link href="/about">About</Link></li>
-        <li className="hover:text-frost-1 dark:hover:text-frost-3 "><Link href="/projects">Projects</Link></li>
+        {/* <li className="hover:text-frost-1 dark:hover:text-frost-3 "><Link href="/contact">Contact</Link></li> */}
         <li><DarkButton></DarkButton></li>
       </ul>
     </nav>  
