@@ -20,14 +20,14 @@ export default function Home() {
           {/* text container */}
             <div className="lg:relative lg:ml-54 lg:text-left lg:w-1/2 md:ml-24">
               <h2 className='mb-[-2.5rem] text-polarnight-2 dark:text-snowstorm-2 text-4xl py-10 '> hi! i'm </h2>
-              <h1 className='mb-8 text-5xl text-frost-1 dark:text-frost-3 font-bold '>Stephen Tao</h1>
+              <h1 className='mb-8 text-5xl text-frost-1 dark:text-frost-1 font-bold '>Stephen Tao</h1>
               <p className='text-polarnight-2 dark:text-snowstorm-2 text-lg leading-7 pb-10 '>
-                I'm currently a 2nd year co-op student at <span className='text-frost-1 dark:text-frost-3 '>Toronto Metropolitan University (Ryerson)</span> studying computer science. Feel free to connect with me below and check out my resume!
+                I'm currently a 2nd year co-op student at <span className='text-frost-1 dark:text-frost-1 '>Toronto Metropolitan University (Ryerson)</span> studying computer science. Feel free to connect with me below and check out my resume!
               </p>
             </div>
 
             {/* dynamic image container */}
-            <div className="border border-white hidden lg:block lg:mr-52 bg-[url('./assets/img/my-pic.JPG')] bg-cover bg-center h-96 w-96 shadow-bubbleShadow animate-bubble"></div>
+            <div className="hidden lg:block lg:mr-52 bg-[url('./assets/img/my-pic.JPG')] bg-cover bg-center h-96 w-96 shadow-bubbleShadow animate-bubble"></div>
             
             {/* static image container */}
             <div className='mb-3 mt-3 flex justify-center items-center'>

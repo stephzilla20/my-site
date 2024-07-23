@@ -18,16 +18,17 @@ return (
       <Link
         href={"/"}
       >
-        <span className="text-xl hover:text-frost-1 dark:hover:text-frost-3 ">Stephen Tao</span>
+        <span className="text-xl hover:text-frost-1 dark:hover:text-frost-1 ">Stephen Tao</span>
       </Link>
      </div>
     <nav className='pt-8 mb-15 flex justify-between text-polarnight-2 dark:text-snowstorm-2'>
       <div className='text-xl flex items-center space-x-3 '>
+        {/* map over nav items to add to nav bar */}
         {navItems.map((item)=> (
           <div>
             <Link 
             href={item.url}
-            className="hover:text-frost-1 dark:hover:text-frost-3"
+            className="hover:text-frost-1 dark:hover:text-frost-1"
             >
               {item.title}
             </Link>

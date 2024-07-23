@@ -25,6 +25,7 @@ module.exports = {
         'snowstorm-1': '#ECEFF4',
         'snowstorm-2': '#E5E9F0',
         'snowstorm-3': '#D8DEE9',
+        'snowstorm-3-custom': 'rgb(216, 222, 233, 0.5)',
         'frost-1': '#5E81AC',
         'frost-2': '#81A1C1',
         'frost-3': '#88C0D0',
@@ -61,7 +62,7 @@ module.exports = {
         bubble: 'bubble 30s linear infinite;'
       },
       boxShadow: {
-          'bubbleShadow': " 0 3px 3px 3px rgba(0,128,128,0.8)"
+          'bubbleShadow': " 0 3px 3px 3px rgb(94, 129, 172, 0.4)"
       }
       
     },

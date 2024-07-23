@@ -20,7 +20,7 @@ function About() {
               I took my first CS course in grade 11 entirely through Zoom in the middle of COVID. Now, I'm pursuing a computer science degree at Toronto Metropolitan University! I'm also currently part of my schools CS course union (CSCU) as well as the TMU's Google DSC.            </p>
 
             <p className='font-inter text-polarnight-2 dark:text-snowstorm-2 text-lg leading-7 pb-10 '>
-              
+              I'm a big foodie, so in my spare time I like to explore restaurants. I also do some home cooking. You can also find me at the gym or playing basketball. 
             </p>
 
             <p className='font-inter text-polarnight-2 dark:text-snowstorm-2 text-lg leading-7 pb-10 '>
