@@ -1,5 +1,6 @@
 import './globals.css'
 import Nav from './components/Nav.jsx'
+import BottomBar from './components/BottomBar'
 import Providers from './providers'
 
 export const metadata = {
@@ -17,6 +18,9 @@ export default function RootLayout({ children }) {
             <Nav></Nav>
           </section>
           {children}
+          <section>
+            <BottomBar></BottomBar>
+          </section>
         </Providers>
 
       </body>

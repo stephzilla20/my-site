@@ -14,8 +14,9 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        Varela: ["Varela-Regular"]
+        open: ["Open-Sans", "sans-serif"]
       },
+
       colors:{
         'polarnight-1': '#4C566A',
         'polarnight-2': '#434C5E',
@@ -28,8 +29,41 @@ module.exports = {
         'frost-2': '#81A1C1',
         'frost-3': '#88C0D0',
         'frost-4': '#8FBCBB',
+        'custom-slate': 'rgba(140, 151, 156, .5)', // Custom color with 50% opacity
         
+      },
+      keyframes:{
+        bubble: {
+          '0%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+          '10%': { borderRadius: '50% 60% 40% 30% / 30% 50% 60% 70%' },
+          '20%': { borderRadius: '40% 50% 70% 30% / 50% 70% 40% 60%' },
+          '30%': { borderRadius: '30% 60% 50% 70% / 70% 40% 60% 30%' },
+          '40%': { borderRadius: '60% 40% 50% 70% / 30% 70% 40% 60%' },
+          '50%': { borderRadius: '40% 60% 30% 50% / 60% 30% 50% 70%' },
+          '60%': { borderRadius: '50% 60% 30% 70% / 60% 30% 70% 40%' },
+          '70%': { borderRadius: '60% 50% 40% 30% / 30% 60% 50% 70%' },
+          '80%': { borderRadius: '40% 60% 40% 50% / 50% 60% 30% 60%' },
+          '90%': { borderRadius: '50% 40% 60% 30% / 60% 50% 30% 40%' },
+          '0%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+          '10%': { borderRadius: '50% 60% 40% 30% / 30% 50% 60% 70%' },
+          '20%': { borderRadius: '40% 50% 70% 30% / 50% 70% 40% 60%' },
+          '30%': { borderRadius: '30% 60% 50% 70% / 70% 40% 60% 30%' },
+          '40%': { borderRadius: '60% 40% 50% 70% / 30% 70% 40% 60%' },
+          '50%': { borderRadius: '40% 60% 30% 50% / 60% 30% 50% 70%' },
+          '60%': { borderRadius: '50% 60% 30% 70% / 60% 30% 70% 40%' },
+          '70%': { borderRadius: '60% 50% 40% 30% / 30% 60% 50% 70%' },
+          '80%': { borderRadius: '40% 60% 40% 50% / 50% 60% 30% 60%' },
+          '90%': { borderRadius: '50% 40% 60% 30% / 60% 50% 30% 40%' },
+          '100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+        }
+      },
+      animation: {
+        bubble: 'bubble 30s linear infinite;'
+      },
+      boxShadow: {
+          'bubbleShadow': " 0 3px 3px 3px rgba(0,128,128,0.8)"
       }
+      
     },
   },
   plugins: [],
