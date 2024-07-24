@@ -4,6 +4,8 @@ import Head from 'next/head'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import { IoMdDocument } from "react-icons/io";
 import Image from "next/image";
+import myPic from './assets/img/my-pic.JPG';
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -32,7 +34,7 @@ export default function Home() {
             {/* static image container */}
             <div className='mb-3 mt-3 flex justify-center items-center'>
               <Image
-                  src="/pics/my-pic.JPG"
+                  src={myPic}
                   width={500}
                   height={500}
                   alt="profile pic"

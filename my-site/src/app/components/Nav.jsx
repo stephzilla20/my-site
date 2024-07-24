@@ -18,7 +18,7 @@ return (
       <Link
         href={"/"}
       >
-        <span className="text-xl hover:text-frost-1 dark:hover:text-frost-1 ">Stephen Tao</span>
+        <span className="text-xl hover:text-frost-1 dark:hover:text-custom-slate ">Stephen Tao</span>
       </Link>
      </div>
     <nav className='pt-8 mb-15 flex justify-between text-polarnight-2 dark:text-snowstorm-2'>
@@ -28,7 +28,7 @@ return (
           <div>
             <Link 
             href={item.url}
-            className="hover:text-frost-1 dark:hover:text-frost-1"
+            className="hover:text-frost-1 dark:hover:text-custom-slate"
             >
               {item.title}
             </Link>
