@@ -13,12 +13,12 @@ export default function Nav(){
 
 return (
 
-  <section className="flex border-b pb-4 border-custom-slate w-full justify-between pr-32 pl-16">
+  <section className="flex border-b pb-4 border-custom-slate w-full justify-between pl-10 pr-16 md:pl-14 lg:px-300px ">
     <div className="pt-8">
       <Link
         href={"/"}
       >
-        <span className="text-xl hover:text-frost-1 dark:hover:text-custom-slate ">Stephen Tao</span>
+        <span className="text-xl hover:text-frost-1 dark:hover:text-custom-slate ">Stephen</span>
       </Link>
      </div>
     <nav className='pt-8 mb-15 flex justify-between text-polarnight-2 dark:text-snowstorm-2'>
