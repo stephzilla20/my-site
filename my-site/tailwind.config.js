@@ -35,17 +35,7 @@ module.exports = {
       },
       keyframes:{
         bubble: {
-          '0%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
-          '10%': { borderRadius: '50% 60% 40% 30% / 30% 50% 60% 70%' },
-          '20%': { borderRadius: '40% 50% 70% 30% / 50% 70% 40% 60%' },
-          '30%': { borderRadius: '30% 60% 50% 70% / 70% 40% 60% 30%' },
-          '40%': { borderRadius: '60% 40% 50% 70% / 30% 70% 40% 60%' },
-          '50%': { borderRadius: '40% 60% 30% 50% / 60% 30% 50% 70%' },
-          '60%': { borderRadius: '50% 60% 30% 70% / 60% 30% 70% 40%' },
-          '70%': { borderRadius: '60% 50% 40% 30% / 30% 60% 50% 70%' },
-          '80%': { borderRadius: '40% 60% 40% 50% / 50% 60% 30% 60%' },
-          '90%': { borderRadius: '50% 40% 60% 30% / 60% 50% 30% 40%' },
-          '0%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+          '0%':  { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
           '10%': { borderRadius: '50% 60% 40% 30% / 30% 50% 60% 70%' },
           '20%': { borderRadius: '40% 50% 70% 30% / 50% 70% 40% 60%' },
           '30%': { borderRadius: '30% 60% 50% 70% / 70% 40% 60% 30%' },
@@ -56,10 +46,19 @@ module.exports = {
           '80%': { borderRadius: '40% 60% 40% 50% / 50% 60% 30% 60%' },
           '90%': { borderRadius: '50% 40% 60% 30% / 60% 50% 30% 40%' },
           '100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
-        }
+        },
+        bounce: {
+          '0%, 100%': {
+            transform: 'translateY(0)',
+          },
+          '50%': {
+            transform: 'translateY(-10px)', // Reduced bounce height
+          },
+        },
       },
       animation: {
-        bubble: 'bubble 30s linear infinite;'
+        bubble: 'bubble 30s linear infinite;',
+        bounce: 'bounce 0.7s ease infinite'
       },
       boxShadow: {
           'bubbleShadow': " 0 3px 3px 3px rgb(94, 129, 172, 0.4)",

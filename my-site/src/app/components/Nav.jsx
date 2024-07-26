@@ -26,6 +26,7 @@ return (
           width={40}
           height={40}
           alt="home icon"
+          className="hover:animate-bounce"
 
         >
         </Image>
