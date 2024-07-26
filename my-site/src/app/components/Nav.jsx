@@ -2,6 +2,8 @@
 
 import Link from "next/link"
 import DarkButton from "./DarkButton";
+import pengIcon from '../assets/img/penguin.png';
+import Image from "next/image";
 
 export default function Nav(){
 
@@ -17,8 +19,17 @@ return (
     <div className="pt-8">
       <Link
         href={"/"}
+        className="flex items-center"
       >
-        <span className="text-xl hover:text-frost-1 dark:hover:text-custom-slate ">Stephen</span>
+        <Image
+          src = {pengIcon}
+          width={40}
+          height={40}
+          alt="home icon"
+
+        >
+        </Image>
+        <span className="px-3 hidden md:block text-2xl font-bold hover:text-frost-1 dark:hover:text-custom-slate">Stephen</span>
       </Link>
      </div>
     <nav className='pt-8 mb-15 flex justify-between text-polarnight-2 dark:text-snowstorm-2'>
