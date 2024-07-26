@@ -62,9 +62,9 @@ module.exports = {
         bubble: 'bubble 30s linear infinite;'
       },
       boxShadow: {
-          'bubbleShadow': " 0 3px 3px 3px rgb(94, 129, 172, 0.4)"
-      }
-      
+          'bubbleShadow': " 0 3px 3px 3px rgb(94, 129, 172, 0.4)",
+          'bubbleShadowDk':" 0 2px 2px 2px rgb(236, 239, 244, 0.2)"
+      },
     },
   },
   plugins: [],
