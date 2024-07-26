@@ -29,7 +29,7 @@ export default function Home() {
             </div>
 
             {/* dynamic image container */}
-            <div className="hidden lg:block lg:mr-52 bg-[url('./assets/img/my-pic.JPG')] bg-cover bg-center h-96 w-96 shadow-bubbleShadow dark:shadow-bubbleShadowDk animate-bubble"></div>
+            <div className="hidden lg:block lg:mr-52 bg-[url('./assets/img/my-pic.JPG')] bg-cover bg-center h-96 w-96 xl:h-100 xl:w-100 shadow-bubbleShadow dark:shadow-bubbleShadowDk animate-bubble"></div>
             
             {/* static image container */}
             <div className='mb-3 mt-3 flex justify-center items-center'>
