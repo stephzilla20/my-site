@@ -22,6 +22,7 @@ module.exports = {
         'polarnight-2': '#434C5E',
         'polarnight-3': '#3B4252',
         'polarnight-4': '#2E3440',
+        'snowstorm-1-custom': 'rgb(236, 239, 244, 0.5)',
         'snowstorm-1': '#ECEFF4',
         'snowstorm-2': '#E5E9F0',
         'snowstorm-3': '#D8DEE9',
@@ -58,7 +59,7 @@ module.exports = {
       },
       animation: {
         bubble: 'bubble 30s linear infinite;',
-        bounce: 'bounce 0.7s ease infinite'
+        bounce: 'bounce 0.7s ease'
       },
       boxShadow: {
           'bubbleShadow': " 0 3px 3px 3px rgb(94, 129, 172, 0.4)",

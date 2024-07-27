@@ -4,6 +4,7 @@
 
 import { ThemeProvider } from 'next-themes'
 import { useEffect, useState } from 'react'
+import { ChakraProvider } from '@chakra-ui/react'
 
 
 
@@ -18,8 +19,11 @@ export default function Providers({children}) {
     return <>{children}</>
   }
   return (
-    <ThemeProvider defaultTheme='system' attribute='class'>{children}</ThemeProvider>
-
+    
+    <ChakraProvider>
+      <ThemeProvider defaultTheme='system' attribute='class'>{children}</ThemeProvider>
+    </ChakraProvider>
+    
 
   );
 }

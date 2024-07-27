@@ -30,17 +30,17 @@ return (
 
         >
         </Image>
-        <span className="px-3 hidden md:block text-2xl font-bold hover:text-frost-1 dark:hover:text-custom-slate">Stephen</span>
+        <span className="px-3 hidden md:block text-polarnight-2 text-2xl font-bold dark:text-snowstorm-1-custom hover:text-frost-1 dark:hover:text-snowstorm-1">Stephen</span>
       </Link>
      </div>
-    <nav className='pt-8 mb-15 flex justify-between text-polarnight-2 dark:text-snowstorm-2'>
+    <nav className='pt-8 mb-15 flex justify-between text-polarnight-2 dark:text-snowstorm-1-custom'>
       <div className='text-xl flex items-center space-x-8 '>
         {/* map over nav items to add to nav bar */}
         {navItems.map((item)=> (
           <div>
             <Link 
             href={item.url}
-            className="hover:text-frost-1 dark:hover:text-custom-slate"
+            className="hover:text-frost-1 dark:hover:text-snowstorm-2"
             >
               {item.title}
             </Link>
