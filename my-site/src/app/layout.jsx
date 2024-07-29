@@ -12,14 +12,16 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className='min-h-screen bg-snowstorm-2 dark:bg-polarnight-4'>
+      <body className='min-h-screen bg-snowstorm-2 dark:bg-polarnight-4 relative'>
         <Providers>
           <section className='flex flex-col items-center'>
             <Nav></Nav>
           </section>
           {children}
-          <section>
-            <Footer></Footer>
+          <section className='flex flex-col items-center'>
+              <footer className='absolute bottom-0 mb-11'>
+                <Footer></Footer>
+              </footer>
           </section>
         </Providers>
 

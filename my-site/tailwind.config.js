@@ -31,6 +31,7 @@ module.exports = {
         'frost-2': '#81A1C1',
         'frost-3': '#88C0D0',
         'frost-4': '#8FBCBB',
+        'frost-1-custom': 'rgb(94, 129, 172, 0.5)',
         'custom-slate': 'rgba(140, 151, 156, .5)', // Custom color with 50% opacity
         
       },
