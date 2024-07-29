@@ -22,6 +22,7 @@ module.exports = {
         'polarnight-2': '#434C5E',
         'polarnight-3': '#3B4252',
         'polarnight-4': '#2E3440',
+        'snowstorm-1-custom': 'rgb(236, 239, 244, 0.5)',
         'snowstorm-1': '#ECEFF4',
         'snowstorm-2': '#E5E9F0',
         'snowstorm-3': '#D8DEE9',
@@ -30,6 +31,7 @@ module.exports = {
         'frost-2': '#81A1C1',
         'frost-3': '#88C0D0',
         'frost-4': '#8FBCBB',
+        'frost-1-custom': 'rgb(94, 129, 172, 0.5)',
         'custom-slate': 'rgba(140, 151, 156, .5)', // Custom color with 50% opacity
         
       },
@@ -58,7 +60,7 @@ module.exports = {
       },
       animation: {
         bubble: 'bubble 30s linear infinite;',
-        bounce: 'bounce 0.7s ease infinite'
+        bounce: 'bounce 0.7s ease'
       },
       boxShadow: {
           'bubbleShadow': " 0 3px 3px 3px rgb(94, 129, 172, 0.4)",

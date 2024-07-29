@@ -26,7 +26,7 @@ export default function DarkButton() {
   return (
         //onClick function will invoke setTheme function and pass in "dark" or "light" , opposite of current theme
         //icon will switch sun if "dark" moon otherwise
-        <button  className='border border-custom-slate rounded-lg p-1 hover:text-frost-1 dark:hover:text-custom-slate cursor-pointer text-polarnight-2 dark:text-snowstorm-2 text-2xl' onClick = {() => setTheme(theme === "dark" ? "light" : "dark")}> 
+        <button  className='border border-custom-slate rounded-lg p-1 hover:text-frost-1 dark:hover:text-snowstorm-1 cursor-pointer text-polarnight-2 dark:text-snowstorm-1-custom text-2xl' onClick = {() => setTheme(theme === "dark" ? "light" : "dark")}> 
             {theme === "dark" ? <BsSun/> : <BsFillMoonStarsFill/>} 
         </button>
 
