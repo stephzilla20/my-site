@@ -1,7 +1,7 @@
 import './globals.css'
 import Nav from './components/Nav.jsx'
-import BottomBar from './components/BottomBar'
 import Providers from './providers'
+import Footer from './components/Footer'
 
 export const metadata = {
   title: 'Stephen Tao',
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           </section>
           {children}
           <section>
-            <BottomBar></BottomBar>
+            <Footer></Footer>
           </section>
         </Providers>
 
