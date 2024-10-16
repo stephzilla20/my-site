@@ -35,10 +35,8 @@ export default function Home() {
             <div className='mb-3 mt-3 flex justify-center items-center'>
               <Image
                   src={myPic}
-                  width={500}
-                  height={500}
                   alt="profile pic"
-                  className="lg:hidden rounded-full overflow-hidden w-[240px] h-[240px] object-cover"
+                  className="lg:hidden rounded-full overflow-hidden w-[300px] h-[300px] object-cover"
                 />
             </div>
           </div>
