@@ -15,7 +15,7 @@ export default function Nav(){
 
 return (
 
-  <section className="flex border-b pb-4 border-custom-slate w-full justify-between pl-10 pr-16 md:pl-14 lg:px-300px ">
+  <section className="flex border-b pb-4 border-custom-slate w-full justify-between pl-10 pr-16 md:pl-14 lg:px-48 xl:px-300px ">
     <div className="pt-8">
       <Link
         href={"/"}
