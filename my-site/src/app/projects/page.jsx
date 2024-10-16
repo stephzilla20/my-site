@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
-import { Card, CardHeader,VStack, CardBody, CardFooter, Tag, Text, TagLabel, HStack} from '@chakra-ui/react'
+import { useState, useEffect } from 'react'
+import { Card, CardHeader,Skeleton, SkeletonText, CardBody, CardFooter, Tag, Text, TagLabel, HStack, Box} from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
 import Microlink from '@microlink/react'
 import {AiFillGithub} from 'react-icons/ai';
@@ -14,8 +15,6 @@ function Projects() {
     {title: "Smoggle Maps", source: "https://github.com/mustafakhafaji/deltahacks-x", desc: " ", link: "https://devpost.com/software/smoggle-maps",tags: ["React-Native", "Expo Go","Google Maps API"]},
     {title: "EcoEats", source: "https://github.com/stephzilla20/terrahacks", desc: "", link: "https://devpost.com/software/ecoeats-6ky3rx",tags: ["React Native","Flask", "Google Gemini", "Azure Vision","Expo Go"]}
   ]
-// A mobile based app aimed to provide navigation while encourging users to be concious about their CO2 emissions whenA mobile-based a
-// pp aimed to provide navigation while encouraging users to be conscious of their CO2 emissions when traveling. travelling
   const breakpoints = {
     base: '0px',
     sm: '320px',
@@ -26,15 +25,30 @@ function Projects() {
   }
   
   const theme = extendTheme({ breakpoints })
+  const [loaded, setLoaded] = useState(false)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoaded(true);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []); 
 
 
   return (
+    
    
       <div className=' flex justify-center items-center min-h-screen'>
         <div className='grid md:grid-cols-2 gap-2'>
         {projects.map((project) => (
+          <Skeleton 
+            startColor="gray.300"
+            endColor="gray.800"
+            isLoaded = {loaded}
+            fadeDuration={1}
+          >
           <div className='m-4 ' key={project.title}>
-            <Card boxSize={{base: '350', md: '300', lg:'450'}}>
+            <Card boxSize={{base: '350', md: '420', lg:'450'}}>
                 <CardHeader fontSize={25}>
                   {/* check value of link, if not empty then add as link else just display title */}
                   {project.link ? (
@@ -53,15 +67,9 @@ function Projects() {
                   )}
                 </CardHeader>
                 <CardBody>
-                  {/* <Text
-                    fontSize={{base:14, md:16}}
-                  >
-                    {project.desc}
-                  </Text> */}
                   <div key={project.title}>
-                    <Microlink url={project.link}/>
+                    <Microlink url={project.link} />
                   </div>
-                 
                 </CardBody>
                 <CardFooter>
                  <HStack 
@@ -81,8 +89,8 @@ function Projects() {
                 </CardFooter>
             </Card>
           </div>
+          </Skeleton>
         ))}
-        
         </div>
       </div>
     

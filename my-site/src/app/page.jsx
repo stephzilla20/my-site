@@ -17,7 +17,7 @@ export default function Home() {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, viewport-fit=cover"></meta>
       </Head>
-      <main className='caret-transparent px-10 pt-14 bg-snowstorm-2 dark:bg-polarnight-4'>
+      <main className='caret-transparent px-10 pt-14'>
         <div className="flex flex-col lg:flex-row items-center lg:justify-between lg:space-x-7 -mx-5 md:-ml-20 lg:mx-12 xl:mx-40">
           {/* text container */}
             <div className="lg:relative lg:ml-54 lg:text-left lg:w-1/2 md:ml-24">
