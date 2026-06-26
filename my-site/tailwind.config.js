@@ -33,6 +33,10 @@ module.exports = {
         'frost-4': '#8FBCBB',
         'frost-1-custom': 'rgb(94, 129, 172, 0.5)',
         'custom-slate': 'rgba(140, 151, 156, .5)', // Custom color with 50% opacity
+        'void-blue': '#050b1e',
+        'midnight-indigo': '#0f1c3f',
+        'electric-cobalt': '#0070f3',
+        'ionic-cyan': '#00ffe0',
         
       },
       keyframes:{

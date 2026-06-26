@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import DarkButton from "./DarkButton";
-import pengIcon from '../assets/img/penguin.png';
+import pengIcon from '../../../public/assets/img/penguin.png';
 import Image from "next/image";
 
 export default function Nav(){
