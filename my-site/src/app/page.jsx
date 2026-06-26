@@ -86,7 +86,7 @@ export default function HomePage() {
             <a className="social-link" href="https://github.com/stephzilla20" target="_blank" rel="noopener noreferrer">
               GH
             </a>
-            <a className="social-link" href="https://drive.google.com/drive/folders/1l4DHbbjp_z07gfQAARV0bWPxk8goKVzo" target="_blank" rel="noopener noreferrer">
+            <a className="social-link" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
               CV
             </a>
           </div>
@@ -214,6 +214,7 @@ export default function HomePage() {
                 <div key={index} className="exp-entry">
                   <span className="exp-date">{item.title}</span>
                   <div>
+                    <span className="exp-year">{item.year}</span>
                     <p className="exp-desc">
                       <W>{item.desc}</W>
                     </p>
