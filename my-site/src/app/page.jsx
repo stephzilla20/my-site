@@ -2,7 +2,8 @@
 
 import React, { useRef, useEffect, useState } from 'react';
 import { wibut } from './data/data';
-import projects from './data/data';
+import {projects} from './data/data';
+import {experience} from './data/data';
 import ImageCard from './components/ImageCard';
 
 const NAV_ITEMS = [
@@ -60,7 +61,7 @@ export default function HomePage() {
 
             <div className="left-top">
               <h1 className="site-name">Stephen<br /> <span className="site-name-last">Tao</span></h1>
-              <p className="site-role">Software Developer</p>
+              <p className="site-role">Based in Toronto</p>
              
 
               <nav className="left-nav" aria-label="Page sections">
@@ -80,7 +81,7 @@ export default function HomePage() {
           </div>
 
           <div className="left-socials">
-            <a className="social-link" href="https://www.linkedin.com/in/stephen-tao-7ab814210" target="_blank" rel="noopener noreferrer">
+            <a className="social-link" href="https://www.linkedin.com/in/stephentao-/" target="_blank" rel="noopener noreferrer">
               Li
             </a>
             <a className="social-link" href="https://github.com/stephzilla20" target="_blank" rel="noopener noreferrer">
@@ -107,12 +108,23 @@ export default function HomePage() {
                 <W>Hey, I'm Stephen, currently a student studying Computer Science at Toronto Metropolitan University. Super interested in learning and building new things ── currently learning mobile development with Expo and React Native! </W>
               </p>
               <br></br>
-              <W>Outside of school and work, I enjoy:</W>
-             <ul>
-              <li><W>Playing basketball</W></li>
-              <li><W>Trying new recipes in the kitchen</W></li>
-              <li><W>Traveling and exploring new places</W></li>
-            </ul>
+              <div className="about-bottom">
+                <div className="about-text">
+                  <W>Outside of school and work, I enjoy:</W>
+                  <ul>
+                    <li><W>Playing basketball</W></li>
+                    <li><W>Trying new recipes in the kitchen</W></li>
+                    <li><W>Traveling and exploring new places</W></li>
+                  </ul>
+                </div>
+                  {/* <Image
+                    src='/assets/img/my-pic.jpg'
+                    alt="profile pic"
+                    width={200}
+                    height={200}
+                    className="about-img"
+                  /> */}
+              </div>
             </div>
           </section>
 
@@ -124,27 +136,15 @@ export default function HomePage() {
           >
             <p className="section-eyebrow">Experience</p>
 
-            <div className="exp-entry">
-              <span className="exp-date">2025</span>
-              <div>
-                <p className="exp-title">Software Developer Intern</p>
-                <p className="exp-company">Info Tech Research Group</p>
-                <p className="exp-desc">
-                  <W>Built and shipped features across the full stack. Worked closely with design to polish UI, contributed to a component library, and improved page load performance by 40%.</W>
-                </p>
+            {experience.map((exp, i) => (
+              <div key={i} className="exp-entry">
+                <span className="exp-date">{exp.year}</span>
+                <div>
+                  <p className="exp-title">{exp.title}</p>
+                  <p className="exp-company">{exp.company}</p>
+                </div>
               </div>
-            </div>
-
-            <div className="exp-entry">
-              <span className="exp-date">2023 - 2024</span>
-              <div>
-                <p className="exp-title">IT Support Technician </p>
-                <p className="exp-company">Toronto Metropolitan University CS Department</p>
-                <p className="exp-desc">
-                  <W>Supported students in a data structures course. Ran weekly office hours, wrote supplementary problem sets, and graded 100+ assignments per semester.</W>
-                </p>
-              </div>
-            </div>
+            ))}
           </section>
 
           {/* PROJECTS */}
@@ -154,51 +154,29 @@ export default function HomePage() {
             ref={el => sectionRefs.current['projects'] = el}
           >
             <p className="section-eyebrow">Projects</p>
-
-            <div className="project-card">
-              <p className="project-title">
-                Project One
-                <span className="project-arrow">↗</span>
-              </p>
-              <p className="project-desc">
-                <W>A short description of what the project does and why it exists. Keep it to two lines — say what makes it interesting, not just what it does.</W>
-              </p>
-              <div className="tag-list">
-                <span className="tag">React</span>
-                <span className="tag">TypeScript</span>
-                <span className="tag">Tailwind</span>
+            {projects.map((p, i) => (
+              <div key={i} className="project-card">
+                <div className="project-card-header">
+                  <p className="project-title">{p.title}</p>
+                  <div className="project-links">
+                    {p.source && (
+                      <a href={p.source} target="_blank" rel="noopener noreferrer" className="project-link">
+                        GitHub
+                      </a>
+                    )}
+                    {p.link && (
+                      <a href={p.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                        View
+                      </a>
+                    )}
+                  </div>
+                </div>
+                <p className="project-desc"><W>{p.desc}</W></p>
+                <div className="tag-list">
+                  {p.tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
+                </div>
               </div>
-            </div>
-
-            <div className="project-card">
-              <p className="project-title">
-                Project Two
-                <span className="project-arrow">↗</span>
-              </p>
-              <p className="project-desc">
-                <W>Another project. A quick description of the problem it solves, the stack used, and anything notable about how it was built.</W>
-              </p>
-              <div className="tag-list">
-                <span className="tag">Next.js</span>
-                <span className="tag">PostgreSQL</span>
-                <span className="tag">Prisma</span>
-              </div>
-            </div>
-
-            <div className="project-card">
-              <p className="project-title">
-                Project Three
-                <span className="project-arrow">↗</span>
-              </p>
-              <p className="project-desc">
-                <W>A third project. Mention what you learned, what was hard about it, or what you're most proud of in this one.</W>
-              </p>
-              <div className="tag-list">
-                <span className="tag">Python</span>
-                <span className="tag">FastAPI</span>
-                <span className="tag">Docker</span>
-              </div>
-            </div>
+            ))}
           </section>
 
 
@@ -239,7 +217,7 @@ export default function HomePage() {
                 <W>email</W>
               </a>
               <W>, or find me on</W>{' '}
-              <a className="contact-link" href="https://www.linkedin.com/in/stephen-tao-7ab814210" target="_blank" rel="noopener noreferrer">
+              <a className="contact-link" href="https://www.linkedin.com/in/stephentao-/" target="_blank" rel="noopener noreferrer">
                 <W>LinkedIn</W>
               </a>
               <W>.</W>

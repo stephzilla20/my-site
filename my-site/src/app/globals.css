@@ -5,6 +5,28 @@
 
 .right-panel::-webkit-scrollbar { display: none; }
 
+a {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #0D4715;
+  transition: width 0.25s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
 .section-body ul {
   list-style: disc;
   padding-left: 1.2rem;
@@ -221,6 +243,26 @@ body {
   color: #fff;
 }
 
+.about-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.about-img {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 /* experience entries */
 .exp-entry {
   display: grid;
@@ -240,10 +282,19 @@ body {
   padding-top: 2px;
 }
 
+.exp-year {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  color: #A89E93;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
 .exp-title {
   font-family: 'Lora', Georgia, serif;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #1C1C1A;
   margin-bottom: 0.2rem;
 }
@@ -280,7 +331,7 @@ body {
 .project-title {
   font-family: 'Lora', Georgia, serif;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #1C1C1A;
   margin-bottom: 0.4rem;
   display: flex;
@@ -336,21 +387,21 @@ body {
 .contact-link {
   color: #0D4715;
   text-decoration: none;
-  border-bottom: 1px solid #0D471533;
   transition: border-color 0.2s;
 }
 
 .contact-link:hover { border-color: #0D4715; }
 
 .image-card {
-  padding: 1.25rem 0;
+  grid-column: 1 / -1;
+  padding: 0.5rem 0 0 0;
 }
 
 
 .image-card-title {
   font-family: 'Lora', Georgia, serif;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #6B6B6B;
   margin-bottom: 0.3rem;
 }
@@ -365,6 +416,7 @@ body {
 
 .image-card-thumbs {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
@@ -419,13 +471,23 @@ body {
 
 .lightbox-close:hover { color: #0D4715; }
 
-.lightbox-img {
+.lightbox-img-wrapper {
   width: 100%;
-  height: 380px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
+  max-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 1rem;
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  display: block;
 }
 
 .lightbox-footer {
@@ -479,6 +541,29 @@ body {
   border-color: #0D4715;
 }
 
+
+.project-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  color: #0D4715;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  position: relative;
+  width: fit-content;
+}
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .left-panel {

@@ -18,7 +18,7 @@ function Lightbox({ images, startIndex, onClose }) {
   return (
     <div className="lightbox-overlay" onClick={onClose}>
       <div className="lightbox-box" onClick={e => e.stopPropagation()}>
-        <button className="lightbox-close" onClick={onClose}>✕</button>
+        {/* <button className="lightbox-close" onClick={onClose}>✕</button> */}
         <img src={images[current]} alt={`Photo ${current + 1}`} className="lightbox-img" />
         <div className="lightbox-footer">
           <button className="lightbox-nav" onClick={() => setCurrent(c => (c - 1 + images.length) % images.length)}>←</button>
